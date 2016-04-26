@@ -274,7 +274,7 @@ class SlackAttachment
                 ($this->markdown['fields'] ? ['fields'] : []),
                 ($this->markdown['pretext'] ? ['pretext'] : [])
             )],
-            (count($this->fields) ? $this->fields : [])
+            (count($this->fields) ? ['fields' => $this->fields] : [])
         );
     }
     
