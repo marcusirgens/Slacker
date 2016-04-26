@@ -1,6 +1,9 @@
 # Slacker
 *A simple PHP library for Slack Webhooks*
 
+## Install
+You can either download a release and `require_once('Slacker.php')`, or you can add `"marcuspi/slacker": "dev-master"` to your `composer.json`.
+
 ## Usage
 ### Incoming webhooks and commands
 ```
