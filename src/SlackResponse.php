@@ -101,11 +101,9 @@ class SlackResponse
         if(!$this->isDelayed) {
             header('Content-Type: application/json; charset=utf-8');
             echo $response;
-            file_put_contents('raw_response.text', $response);
         } else {
             //echo $response;
             $test = $this->sendDelayedResponse($response);
-            file_put_contents('raw_response.text', $response);
         }
     }
     
