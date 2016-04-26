@@ -309,7 +309,7 @@ class SlackRequest
                     $this->token = $value;
                     break;
                 case 'timestamp':
-                    $this->timestamp = new DateTime('@' . (int) $value, new DateTimeZone('Europe/Oslo'));
+                    $this->timestamp = new \DateTime('@' . (int) $value, new \DateTimeZone('Europe/Oslo'));
                     break;
                 case 'team_id':
                     $this->teamId = $value;
