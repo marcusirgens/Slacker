@@ -1,0 +1,28 @@
+{
+    "name": "marcuspi\/slacker",
+    "description": "A super-simple library for custom Slack integrations",
+    "keywords": [
+        "slack",
+        "webhook",
+        "incoming",
+        "outgoing",
+        "slash"
+    ],
+    "homepage": "https:\/\/github.com\/marcusirgens\/Slacker",
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "Marcus Pettersen Irgens",
+            "email": "marcus@comcamp.no",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https:\/\/github.com\/marcusirgens\/Slacker\/issues"
+    },
+    "autoload": {
+        "psr-4": {
+            "Slacker\\": "src\/"
+        }
+    }
+}
