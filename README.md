@@ -6,7 +6,9 @@ You can either download a release and `require_once('Slacker.php')`, or you can 
 
 ## Usage
 ### Incoming webhooks and commands
-```
+```php
+<?php
+
 $token = "MY_TOKEN';
 $trigger = 'MY_TRIGGER';
 $command = 'COMMAND';
@@ -35,7 +37,9 @@ if ($slack->isCommand() && ($slack->command() == $command)) {
 ```
 ### Adding attachments
 Inject a `Slacker\SlackAttachment` to the response with `SlackResponse->addAttachment($att)`.
-```
+```php
+<?php
+
 $att = new Slacker\SlackAttachment();
 $att->setColor('good');
 $att->setTitle('Everything is fine');
@@ -44,7 +48,9 @@ $att->markdown(true, true, false);
 $someResponse->addAttachment($att);
 ```
 ### Incoming webhooks
-```
+```php
+<?php
+
 $channel = 'CHANNEL';
 $username = 'USERNAME';
 $webhookUrl = 'GET YOUR OWN TOKEN';
