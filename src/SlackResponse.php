@@ -46,7 +46,7 @@ class SlackResponse
      * @var array
      * @access private
      */
-    private $attachments;
+    private $attachments = [];
     
     
     public function __construct(SlackRequest $slackRequest) {
